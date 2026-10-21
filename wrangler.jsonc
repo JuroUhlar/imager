@@ -1,1 +1,22 @@
-{"$schema":"./node_modules/wrangler/config-schema.json","name":"imager","main":"src/index.js","compatibility_date":"2026-10-21","r2_buckets":[{"binding":"IMAGES","bucket_name":"personal-images"}]}
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "imager",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-21",
+  "r2_buckets": [
+    {
+      "binding": "IMAGES",
+      "bucket_name": "personal-images"
+    }
+  ],
+  "ratelimits": [
+    {
+      "name": "UPLOAD_LIMITER",
+      "namespace_id": "781942",
+      "simple": {
+        "limit": 10,
+        "period": 60
+      }
+    }
+  ]
+}
