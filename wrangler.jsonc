@@ -1,0 +1,1 @@
+{"$schema":"./node_modules/wrangler/config-schema.json","name":"imager","main":"src/index.js","compatibility_date":"2026-10-21","r2_buckets":[{"binding":"IMAGES","bucket_name":"personal-images"}]}
